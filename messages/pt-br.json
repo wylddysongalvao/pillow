@@ -1,0 +1,65 @@
+{
+  "Metadata": {
+    "title": "pillow",
+    "description": "Gerado pelo aplicativo create next"
+  },
+
+  "Sidebar": {
+    "title": "pillow",
+    "role": "admin",
+
+    "menu": {
+      "title": "PLATAFORMA"
+    },
+
+    "items": {
+      "playground": "Playground",
+      "history": "Histórico",
+      "starred": "Favoritos",
+
+      "models": "Modelos",
+      "genesis": "Gênesis",
+      "explorer": "Explorador",
+      "quantum": "Quantum",
+
+      "documentation": "Documentação",
+      "intro": "Introdução",
+      "getStarted": "Primeiros Passos",
+      "tutorials": "Tutoriais",
+      "changelog": "Changelog",
+
+      "settings": "Configurações",
+      "general": "Geral",
+      "team": "Equipe",
+      "billing": "Faturamento",
+      "limits": "Limites"
+    },
+
+    "user": {
+      "account": "Minha Conta",
+      "logout": "Sair"
+    }
+  },
+
+  "Login": {
+    "title": "Login",
+    "description": "Digite seu email abaixo para fazer login na sua conta",
+
+    "email": {
+      "label": "Email",
+      "placeholder": "email@dominio.com"
+    },
+
+    "password": {
+      "label": "Senha"
+    },
+
+    "buttons": {
+      "login": "Entrar",
+      "google": "Entrar com Google",
+      "forgot": "Esqueceu sua senha?",
+      "signup": "Inscrever-se",
+      "noAccount": "Não tem uma conta?"
+    }
+  }
+}
