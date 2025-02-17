@@ -32,6 +32,7 @@ export function NavMain({
     items?: {
       title: string;
       url: string;
+      icon?: LucideIcon;
     }[];
   }[];
 }) {
@@ -53,7 +54,9 @@ export function NavMain({
                 <SidebarMenuButton tooltip={item.title}>
                   {item.icon && <item.icon />}
                   <span>{t(`items.${item.title}` as TranslationKey)}</span>
-                  <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                  {item.items ? (
+                    <ChevronRight className="ml-auto transition-transform duration-200 group-data-[state=open]/collapsible:rotate-90" />
+                  ) : null}
                 </SidebarMenuButton>
               </CollapsibleTrigger>
 
@@ -63,6 +66,7 @@ export function NavMain({
                     <SidebarMenuSubItem key={subItem.title}>
                       <SidebarMenuSubButton asChild>
                         <a href={subItem.url}>
+                          {subItem.icon && <subItem.icon />}
                           <span>{t(`items.${subItem.title}` as TranslationKey)}</span>
                         </a>
                       </SidebarMenuSubButton>
